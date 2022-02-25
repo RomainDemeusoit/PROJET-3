@@ -1,0 +1,127 @@
+body {
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2.75rem;
+}
+
+.intro__button {
+  padding: 1rem;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(170deg, #ef74da, #a45cdb);
+  box-shadow: 0px 4px 10px grey;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  height: 4rem;
+  box-shadow: 0px 1px 10px grey;
+}
+.header__logo {
+  width: 11rem;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eaeaea;
+  margin: 1rem;
+}
+.position__icon {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 8rem;
+}
+
+.intro {
+  height: 20rem;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.intro__title {
+  width: 70%;
+  padding-top: 1rem;
+}
+.intro__description {
+  width: 80%;
+}
+
+.fonctionnement {
+  background-color: #fff;
+}
+
+.step {
+  display: flex;
+  width: 10rem;
+  position: relative;
+}
+.step__number {
+  background-color: #9356DC;
+  border-radius: 35px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */

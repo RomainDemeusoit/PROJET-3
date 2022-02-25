@@ -1,0 +1,10 @@
+.header {
+    @include flex-center-item;
+    background-color: $colour-white;
+    height: 4rem;
+    box-shadow: 0px 1px 10px grey;
+    &__logo {
+        width: 11rem;
+    }
+}
+    
