@@ -107,6 +107,7 @@ button {
 }
 .intro__description {
   width: 80%;
+  margin-top: 0px;
 }
 
 .fonctionnement {
