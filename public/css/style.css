@@ -25,7 +25,7 @@ h2 {
   font-size: 1.6rem;
   line-height: 1.6rem;
   margin: 0;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
 }
 
 a {
@@ -65,7 +65,7 @@ button {
   padding-right: 1.5rem;
   border-radius: 50px;
   color: #fff;
-  background: linear-gradient(170deg, #ef74da, #a45cdb);
+  background: linear-gradient(175deg, #020024 0%, #ef74da 0%, #a45cdb 60%);
   box-shadow: 0px 4px 10px grey;
 }
 
