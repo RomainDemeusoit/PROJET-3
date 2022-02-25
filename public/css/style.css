@@ -59,7 +59,10 @@ button {
 }
 
 .intro__button {
-  padding: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   border-radius: 50px;
   color: #fff;
   background: linear-gradient(170deg, #ef74da, #a45cdb);
