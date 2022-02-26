@@ -12,7 +12,7 @@
 
 .intro {
     height: 18rem;
-    background-color: $color-grey;
+    background-color: $colour-grey;
     @include flex-center-text;
     &__title {
         width: 70%;
@@ -27,9 +27,30 @@
 .fonctionnement {
     height: 28rem;
     background-color: $colour-white;
+    &>h2 {
+        margin: 0;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    &>div {
+        height: 18rem;
+        @include flex-center-column-between;
+    }
 }
 
-.fonctionnement>div {
-    height: 18rem;
-    @include flex-center-column-between;
+#restaurants {
+    height: 140rem;
+    background-color: $colour-grey;
+    &>h2 {
+        margin: 0;
+        padding-top: 3.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1rem;
+    }
+    &>div {
+        height: 68rem;
+        @include flex-center-column-between;
+    }
 }
+

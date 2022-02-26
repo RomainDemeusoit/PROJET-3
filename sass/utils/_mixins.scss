@@ -39,13 +39,15 @@
     @include flex-center-row;
     width: 20rem;
     padding: 0.5rem;
-    background-color: $color-grey;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+    background-color: $colour-grey;
+    box-shadow: $shadow;
     border-radius: 20px;
     position: relative;
     left: 5px;
+    padding: 1rem;
     &__number {
         @include flex-center-item;
+        padding: 1rem;
         background-color: $colour-primary;
         color: $colour-white;
         width: 0;
@@ -59,4 +61,47 @@
         margin-left: 2rem;
         margin-right: 0.5rem;
     }
+    &__description {
+        padding: 0.6rem;
+    }
+}
+
+@mixin restaurant {
+    height: 16rem;
+    width: 22.5rem;
+    border-radius: 15px;
+    background-color: $colour-white;
+    box-shadow: $shadow;
+    position: relative;
+    &__img {
+        object-fit: cover;
+        width: 22.5rem;
+        height: 11rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &__title {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    &__location {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    &__icon {
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+    }
+    &__new {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: green;
+        background-color: $colour-tertiary;
+    }
+    
 }

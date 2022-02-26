@@ -24,21 +24,23 @@ h2 {
   font-weight: 900;
   font-size: 1.6rem;
   line-height: 1.6rem;
-  margin: 0;
-  padding-top: 2.5rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 div {
   font-size: 1.1rem;
   font-weight: 900;
-  padding: 1rem;
 }
 
 a {
   font-size: 1.1rem;
   text-decoration: none;
+  color: black;
 }
 
 i {
@@ -78,7 +80,7 @@ button {
   border-radius: 50px;
   color: #fff;
   background: linear-gradient(175deg, #020024 0%, #ef74da 0%, #a45cdb 60%);
-  box-shadow: 0px 4px 10px grey;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
 }
 
 .step {
@@ -92,11 +94,13 @@ button {
   border-radius: 20px;
   position: relative;
   left: 5px;
+  padding: 1rem;
 }
 .step__number {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   background-color: #9356DC;
   color: #fff;
   width: 0;
@@ -110,6 +114,9 @@ button {
   margin-left: 2rem;
   margin-right: 0.5rem;
 }
+.step__description {
+  padding: 0.6rem;
+}
 .step--pink {
   display: flex;
   align-items: center;
@@ -121,12 +128,14 @@ button {
   border-radius: 20px;
   position: relative;
   left: 5px;
+  padding: 1rem;
   background-color: #f5edff;
 }
 .step--pink__number {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   background-color: #9356DC;
   color: #fff;
   width: 0;
@@ -139,6 +148,9 @@ button {
   color: grey;
   margin-left: 2rem;
   margin-right: 0.5rem;
+}
+.step--pink__description {
+  padding: 0.6rem;
 }
 .step__icon--pink {
   color: #9356DC;
@@ -193,13 +205,75 @@ button {
   height: 28rem;
   background-color: #fff;
 }
-
+.fonctionnement > h2 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
 .fonctionnement > div {
   height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+#restaurants {
+  height: 140rem;
+  background-color: #f6f6f6;
+}
+#restaurants > h2 {
+  margin: 0;
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+#restaurants > div {
+  height: 68rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant {
+  height: 16rem;
+  width: 22.5rem;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+  position: relative;
+}
+.restaurant__img {
+  object-fit: cover;
+  width: 22.5rem;
+  height: 11rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__title {
+  margin: 0;
+  padding-left: 1rem;
+}
+.restaurant__location {
+  margin: 0;
+  padding-left: 1rem;
+}
+.restaurant__icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+}
+.restaurant__new {
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: green;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

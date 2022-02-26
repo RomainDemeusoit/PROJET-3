@@ -18,21 +18,23 @@ h2 {
     font-weight: 900;
     font-size: 1.6rem;
     line-height: 1.6rem;
-    margin: 0;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
 }
 
 div {
     font-size: 1.1rem;
     font-weight: 900;
-    padding: 1rem;
 }
 
 a {
     font-size: 1.1rem;
     text-decoration: none;
+    color: black;
 }
 
 i {
