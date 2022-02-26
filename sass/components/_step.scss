@@ -1,0 +1,12 @@
+.step {
+    @include step;
+    &--pink {
+        @include step;
+        background-color: #f5edff;
+    }
+    &__icon--pink {
+        color: $colour-primary ;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+    }
+}

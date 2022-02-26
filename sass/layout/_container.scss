@@ -1,0 +1,35 @@
+.position {
+    @include flex-center-item;
+    background-color: #eaeaea;
+    margin: 1rem;
+    padding: 0;
+    &__icon {
+        font-size: 1.2rem;
+        position: absolute;
+        left: 8rem;
+    }
+}
+
+.intro {
+    height: 18rem;
+    background-color: $color-grey;
+    @include flex-center-text;
+    &__title {
+        width: 70%;
+        padding-top: 1rem;
+    }
+    &__description {
+        margin-top: 0px;
+        margin-bottom: 2rem;
+    }
+}
+
+.fonctionnement {
+    height: 28rem;
+    background-color: $colour-white;
+}
+
+.fonctionnement>div {
+    height: 18rem;
+    @include flex-center-column-between;
+}

@@ -2,14 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 @mixin flex-center-row {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+@mixin flex-center-column-between {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @mixin flex-center-text {
@@ -28,4 +33,30 @@
     color: $colour-white;
     background: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(239,116,218,1) 0%, rgba(164,92,219,1) 60%);
     box-shadow: $shadow;
+}
+
+@mixin step {
+    @include flex-center-row;
+    width: 20rem;
+    padding: 0.5rem;
+    background-color: $color-grey;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+    border-radius: 20px;
+    position: relative;
+    left: 5px;
+    &__number {
+        @include flex-center-item;
+        background-color: $colour-primary;
+        color: $colour-white;
+        width: 0;
+        height: 0;
+        border-radius: 35px;
+        position: absolute;
+        left: -14px;
+    }
+    &__icon {
+        color: grey;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+    }
 }
