@@ -44,7 +44,7 @@ a {
 }
 
 i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -111,7 +111,7 @@ button {
 }
 .step__icon {
   color: grey;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-right: 0.5rem;
 }
 .step__description {
@@ -146,7 +146,7 @@ button {
 }
 .step--pink__icon {
   color: grey;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-right: 0.5rem;
 }
 .step--pink__description {
@@ -154,7 +154,7 @@ button {
 }
 .step__icon--pink {
   color: #9356DC;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-right: 0.5rem;
 }
 
@@ -220,7 +220,7 @@ button {
 }
 
 #restaurants {
-  height: 140rem;
+  height: 78.5rem;
   background-color: #f6f6f6;
 }
 #restaurants > h2 {
@@ -237,9 +237,39 @@ button {
   justify-content: space-between;
 }
 
+.footer {
+  height: 12rem;
+  background-color: #353535;
+}
+.footer__logo {
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  color: white;
+  font-family: "Shrikhand";
+  font-weight: 200;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+.footer__content--icon1 {
+  font-size: 0.8rem;
+  padding-right: 0.8rem;
+}
+.footer__content--icon2 {
+  font-size: 0.6rem;
+  padding-right: 0.8rem;
+}
+.footer__content > a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 .restaurant {
   height: 16rem;
-  width: 22.5rem;
+  width: 23.5rem;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
@@ -247,7 +277,7 @@ button {
 }
 .restaurant__img {
   object-fit: cover;
-  width: 22.5rem;
+  width: 23.5rem;
   height: 11rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -260,10 +290,24 @@ button {
   margin: 0;
   padding-left: 1rem;
 }
-.restaurant__icon {
+.restaurant__icon::before {
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
   bottom: 2rem;
+  font-size: 1.5rem;
+}
+.restaurant__icon::before:hover {
+  display: none !important;
+}
+.restaurant__icon--full {
+  visibility: hidden !important;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 2rem;
+  font-size: 1.5rem;
+}
+.restaurant__icon--full:hover {
+  visibility: visible !important;
 }
 .restaurant__new {
   font-size: 1rem;

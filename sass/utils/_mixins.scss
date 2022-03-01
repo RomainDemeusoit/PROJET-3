@@ -58,7 +58,7 @@
     }
     &__icon {
         color: grey;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         margin-right: 0.5rem;
     }
     &__description {
@@ -68,14 +68,14 @@
 
 @mixin restaurant {
     height: 16rem;
-    width: 22.5rem;
+    width: 23.5rem;
     border-radius: 15px;
     background-color: $colour-white;
     box-shadow: $shadow;
     position: relative;
     &__img {
         object-fit: cover;
-        width: 22.5rem;
+        width: 23.5rem;
         height: 11rem;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -88,10 +88,24 @@
         margin: 0;
         padding-left: 1rem;
     }
-    &__icon {
+    &__icon::before {
         position: absolute;
-        right: 1rem;
+        right: 1.5rem;
         bottom: 2rem;
+        font-size: 1.5rem;
+        &:hover {
+            display: none !important;
+        }
+    }
+    &__icon--full {
+        visibility: hidden !important;
+        position: absolute;
+        right: 1.5rem;
+        bottom: 2rem;
+        font-size: 1.5rem;
+        &:hover {
+            visibility: visible !important;
+        }
     }
     &__new {
         font-size: 1rem;

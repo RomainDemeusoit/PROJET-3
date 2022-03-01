@@ -1,0 +1,32 @@
+.footer {
+    height: 12rem;
+    background-color: $colour-footer;
+    &__logo {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+        color: white;
+        font-family: 'Shrikhand';
+        font-weight: 200;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        &--icon1 {
+            font-size: 0.8rem;
+            padding-right: 0.8rem;
+        }
+        &--icon2 {
+            font-size: 0.6rem;
+            padding-right: 0.8rem;
+        }
+    }
+    &__content>a {
+        color: $colour-white;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}
+
+
+
