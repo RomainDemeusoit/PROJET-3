@@ -72,102 +72,24 @@ button {
   font-size: 2.75rem;
 }
 
-.intro__button {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-radius: 50px;
-  color: #fff;
-  background: linear-gradient(175deg, #020024 0%, #ef74da 0%, #a45cdb 60%);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
-}
-
-.step {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 20rem;
-  padding: 0.5rem;
-  background-color: #f6f6f6;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
-  border-radius: 20px;
-  position: relative;
-  left: 5px;
-  padding: 1rem;
-}
-.step__number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: #9356DC;
-  color: #fff;
-  width: 0;
-  height: 0;
-  border-radius: 35px;
-  position: absolute;
-  left: -14px;
-}
-.step__icon {
-  color: grey;
-  margin-left: 1.5rem;
-  margin-right: 0.5rem;
-}
-.step__description {
-  padding: 0.6rem;
-}
-.step--pink {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 20rem;
-  padding: 0.5rem;
-  background-color: #f6f6f6;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
-  border-radius: 20px;
-  position: relative;
-  left: 5px;
-  padding: 1rem;
-  background-color: #f5edff;
-}
-.step--pink__number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: #9356DC;
-  color: #fff;
-  width: 0;
-  height: 0;
-  border-radius: 35px;
-  position: absolute;
-  left: -14px;
-}
-.step--pink__icon {
-  color: grey;
-  margin-left: 1.5rem;
-  margin-right: 0.5rem;
-}
-.step--pink__description {
-  padding: 0.6rem;
-}
-.step__icon--pink {
-  color: #9356DC;
-  margin-left: 1.5rem;
-  margin-right: 0.5rem;
-}
-
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: #fff;
   height: 4rem;
   box-shadow: 0px 1px 10px grey;
 }
 .header__logo {
   width: 11rem;
+}
+.header__button {
+  position: absolute;
+  left: 1.4rem;
+}
+.header__button > i {
+  font-size: 1.4rem;
 }
 
 .position {
@@ -267,7 +189,93 @@ button {
   font-weight: 100;
 }
 
-.restaurant {
+.intro__button {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(175deg, #020024 0%, #ef74da 0%, #a45cdb 60%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 20rem;
+  padding: 0.5rem;
+  background-color: #f6f6f6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+  border-radius: 20px;
+  position: relative;
+  left: 5px;
+  padding: 1rem;
+}
+.step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #9356DC;
+  color: #fff;
+  width: 0;
+  height: 0;
+  border-radius: 35px;
+  position: absolute;
+  left: -14px;
+}
+.step__icon {
+  color: grey;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+.step__description {
+  padding: 0.6rem;
+}
+.step--pink {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 20rem;
+  padding: 0.5rem;
+  background-color: #f6f6f6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+  border-radius: 20px;
+  position: relative;
+  left: 5px;
+  padding: 1rem;
+  background-color: #f5edff;
+}
+.step--pink__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #9356DC;
+  color: #fff;
+  width: 0;
+  height: 0;
+  border-radius: 35px;
+  position: absolute;
+  left: -14px;
+}
+.step--pink__icon {
+  color: grey;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+.step--pink__description {
+  padding: 0.6rem;
+}
+.step__icon--pink {
+  color: #9356DC;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.button_restaurant {
   height: 16rem;
   width: 23.5rem;
   border-radius: 15px;
@@ -275,41 +283,41 @@ button {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
   position: relative;
 }
-.restaurant__img {
+.button_restaurant__img {
   object-fit: cover;
   width: 23.5rem;
   height: 11rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurant__title {
+.button_restaurant__title {
   margin: 0;
   padding-left: 1rem;
 }
-.restaurant__location {
+.button_restaurant__location {
   margin: 0;
   padding-left: 1rem;
 }
-.restaurant__icon::before {
+.button_restaurant__icon::before {
   position: absolute;
   right: 1.5rem;
   bottom: 2rem;
   font-size: 1.5rem;
 }
-.restaurant__icon::before:hover {
+.button_restaurant__icon::before:hover {
   display: none !important;
 }
-.restaurant__icon--full {
+.button_restaurant__icon--full {
   visibility: hidden !important;
   position: absolute;
   right: 1.5rem;
   bottom: 2rem;
   font-size: 1.5rem;
 }
-.restaurant__icon--full:hover {
+.button_restaurant__icon--full:hover {
   visibility: visible !important;
 }
-.restaurant__new {
+.button_restaurant__new {
   font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -318,6 +326,48 @@ button {
   top: 1rem;
   color: green;
   background-color: #99E2D0;
+}
+
+.a_la_francaise {
+  position: relative;
+}
+
+.restaurant_img {
+  width: 100%;
+}
+
+.border_radius_ontop {
+  position: absolute;
+  top: 18rem;
+  width: 100%;
+  height: 3.5rem;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  background-color: #eaeaea;
+}
+.border_radius_ontop > h1 {
+  font-family: "shrikhand";
+  font-size: 2rem;
+  font-weight: 100;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+}
+.border_radius_ontop > i {
+  position: absolute;
+  top: 2.3rem;
+  right: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.intro__button--order {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(175deg, #020024 0%, #ef74da 0%, #a45cdb 60%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

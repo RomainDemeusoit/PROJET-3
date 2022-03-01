@@ -1,12 +1,30 @@
-.step {
-    @include step;
-    &--pink {
-        @include step;
-        background-color: #f5edff;
+@mixin step {
+    @include flex-center-row;
+    width: 20rem;
+    padding: 0.5rem;
+    background-color: $colour-grey;
+    box-shadow: $shadow;
+    border-radius: 20px;
+    position: relative;
+    left: 5px;
+    padding: 1rem;
+    &__number {
+        @include flex-center-item;
+        padding: 1rem;
+        background-color: $colour-primary;
+        color: $colour-white;
+        width: 0;
+        height: 0;
+        border-radius: 35px;
+        position: absolute;
+        left: -14px;
     }
-    &__icon--pink {
-        color: $colour-primary ;
+    &__icon {
+        color: grey;
         margin-left: 1.5rem;
         margin-right: 0.5rem;
+    }
+    &__description {
+        padding: 0.6rem;
     }
 }

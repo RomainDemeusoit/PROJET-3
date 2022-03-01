@@ -1,10 +1,18 @@
 .header {
     @include flex-center-item;
+    position: relative;
     background-color: $colour-white;
     height: 4rem;
     box-shadow: 0px 1px 10px grey;
     &__logo {
         width: 11rem;
+    }
+    &__button {
+        position: absolute;
+        left: 1.4rem;
+        &>i {
+            font-size: 1.4rem;
+        }
     }
 }
     

@@ -1,3 +1,20 @@
-.restaurant {
-    @include restaurant
+.intro__button {
+    @include button
+}
+
+.step {
+    @include step;
+    &--pink {
+        @include step;
+        background-color: #f5edff;
+    }
+    &__icon--pink {
+        color: $colour-primary ;
+        margin-left: 1.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.button_restaurant {
+    @include btn_restaurant
 }
