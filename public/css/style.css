@@ -364,11 +364,28 @@ button {
   padding-left: 1.2rem;
   padding-top: 1rem;
 }
-.border_radius_ontop > i {
+.border_radius_ontop__icon {
   position: absolute;
   top: 2.3rem;
   right: 2.5rem;
   font-size: 1.8rem;
+  transform: scale(1);
+}
+.border_radius_ontop__icon:active {
+  transform: scale(0);
+}
+.border_radius_ontop__icon:active + .border_radius_ontop__icon--full {
+  transform: scale(1);
+}
+.border_radius_ontop__icon--full {
+  position: absolute;
+  top: 2.3rem;
+  right: 2.5rem;
+  font-size: 1.8rem;
+  transform: scale(0);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu_section__title {

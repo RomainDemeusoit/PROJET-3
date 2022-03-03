@@ -23,11 +23,29 @@
         padding-left: 1.2rem;
         padding-top: 1rem;
     }
-    >i {
+    &__icon {
         position: absolute;
         top: 2.3rem;
         right: 2.5rem;
         font-size: 1.8rem;
+        transform: scale(1);
+        &:active {
+            transform: scale(0);
+        }
+        &:active + .border_radius_ontop__icon--full {
+            transform: scale(1);
+        }
+    }
+    &__icon--full {
+        position: absolute;
+        top: 2.3rem;
+        right: 2.5rem;
+        font-size: 1.8rem;
+        transform: scale(0);
+        
+        background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
