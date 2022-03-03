@@ -5,7 +5,7 @@
     padding-right: 1.5rem;
     border-radius: 50px;
     color: $colour-white;
-    background: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(239,116,218,1) 0%, rgba(164,92,219,1) 60%);
+    background: $colour-btn;
     box-shadow: $shadow;
 }
 
@@ -31,24 +31,31 @@
         margin: 0;
         padding-left: 1rem;
     }
-    &__icon::before {
+    &__icon {
         position: absolute;
+        cursor: pointer;
         right: 1.5rem;
         bottom: 2rem;
         font-size: 1.5rem;
-        &:hover {
-            display: none !important;
+        transform: scale(1);
+        &:active {
+            transform: scale(0);
+        }
+        &:active + .button_restaurant__icon--full {
+            transform: scale(1);
         }
     }
     &__icon--full {
-        visibility: hidden !important;
         position: absolute;
         right: 1.5rem;
         bottom: 2rem;
         font-size: 1.5rem;
-        &:hover {
-            visibility: visible !important;
-        }
+        transform: scale(0);
+        
+        background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+          
     }
     &__new {
         font-size: 1rem;
@@ -63,7 +70,29 @@
     
 }
 
-@mixin btn_plat {
+@mixin btn_dish {
+    position: relative;
     width: 23.5rem;
-    
+    height: 4.5rem;
+    background-color: $colour-white;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    &__title {
+        margin: 0;
+        padding-left: 0.7rem;
+        padding-top: 0.8rem;
+        line-height: 1.5rem;
+    }
+    &__description {
+        margin: 0;
+        padding-left: 0.7rem;
+        font-size: 1rem;
+    }
+    &__price {
+        position: absolute;
+        top: 1.4rem;
+        right: 1.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+    }
 }
