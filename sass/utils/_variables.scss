@@ -1,5 +1,7 @@
 $colour-primary: #9356DC;
+$colour-primary-light: lighten($colour-primary, 5);
 $colour-secondary: #FF79DA;
+$colour-secondary-light: lighten($colour-secondary, 5);
 $colour-tertiary: #99E2D0;
 $colour-dark-grey: #eaeaea;
 $colour-grey: #f6f6f6;
@@ -7,8 +9,9 @@ $colour-white: #fff;
 $colour-black: black;
 $colour-footer: #353535;
 $colour-invalid: #DB464B;
-$colour-btn: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(239,116,218,1) 0%, rgba(164,92,219,1) 60%);
+$colour-btn: linear-gradient(175deg, $colour-black 0%, $colour-secondary 0%, $colour-primary 60%);
 
 $shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
+$shadow-dark: rgba(99, 99, 99, 70%) 0px 5px 8px 2px;
 $layout-margin: 6rem;
 $grid-gutter: $layout-margin * .25;
