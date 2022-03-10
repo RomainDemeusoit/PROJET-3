@@ -1,0 +1,30 @@
+.loading_spinner {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    left: 50%;
+    top: 10rem;
+    margin-left: -3rem;
+    opacity: 0;
+    border: .8rem solid $colour-primary;
+    border-left: .8rem solid $colour-white;
+    animation: rotate 3s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    15% {
+        transform: rotate(0deg);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+}

@@ -40,6 +40,7 @@
 }
 
 #restaurants {
+    position: relative;
     height: 78.5rem;
     background-color: $colour-grey;
     &>h2 {
@@ -48,9 +49,24 @@
         padding-bottom: 1.5rem;
         padding-left: 1rem;
     }
-    &>div {
+    &>.container_restaurant {
+        opacity: 1;
         height: 68rem;
         @include flex-center-column-between;
+        animation: apparition 4s ease-in-out;
+    }
+
+    @keyframes apparition {
+        0% {
+            opacity: 0;
+        }
+
+        85% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
 
