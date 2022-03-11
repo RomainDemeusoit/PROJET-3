@@ -373,7 +373,6 @@ button {
   right: 1.5rem;
   bottom: 2rem;
   font-size: 1.5rem;
-  z-index: 1;
 }
 .button_restaurant__icon:hover .button_restaurant__icon--full {
   opacity: 1;
@@ -384,7 +383,6 @@ button {
   right: 0;
   font-size: 1.5rem;
   opacity: 0;
-  z-index: 1;
   transition: opacity ease-in-out 0.3s;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -428,23 +426,21 @@ button {
 }
 .border_radius_ontop__icon {
   position: absolute;
-  top: 2.3rem;
-  right: 2.5rem;
+  cursor: pointer;
+  right: 3rem;
+  top: 2rem;
   font-size: 1.8rem;
-  transform: scale(1);
 }
-.border_radius_ontop__icon:active {
-  transform: scale(0);
-}
-.border_radius_ontop__icon:active + .border_radius_ontop__icon--full {
-  transform: scale(1);
+.border_radius_ontop__icon:hover .button_restaurant__icon--full {
+  opacity: 1;
 }
 .border_radius_ontop__icon--full {
   position: absolute;
-  top: 2.3rem;
-  right: 2.5rem;
+  cursor: pointer;
+  right: 0;
   font-size: 1.8rem;
-  transform: scale(0);
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

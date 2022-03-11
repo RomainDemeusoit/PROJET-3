@@ -25,23 +25,23 @@
     }
     &__icon {
         position: absolute;
-        top: 2.3rem;
-        right: 2.5rem;
+        cursor: pointer;
+        right: 3rem;
+        top: 2rem;
         font-size: 1.8rem;
-        transform: scale(1);
-        &:active {
-            transform: scale(0);
-        }
-        &:active + .border_radius_ontop__icon--full {
-            transform: scale(1);
+        &:hover {
+            & .button_restaurant__icon--full {
+                opacity: 1;
+            }
         }
     }
     &__icon--full {
         position: absolute;
-        top: 2.3rem;
-        right: 2.5rem;
+        cursor: pointer;
+        right: 0;
         font-size: 1.8rem;
-        transform: scale(0);
+        opacity: 0;
+        transition: opacity ease-in-out 0.3s;
         
         background: -webkit-linear-gradient($colour-primary, $colour-secondary);
         -webkit-background-clip: text;
