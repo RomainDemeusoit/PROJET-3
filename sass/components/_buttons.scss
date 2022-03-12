@@ -97,22 +97,70 @@
     background-color: $colour-white;
     border-radius: 15px;
     box-shadow: $shadow;
+    overflow: hidden;
+    &:hover {
+        & .button_dish__check_box {
+            transform: translateX(0);
+        }
+        & .button_dish__price {
+            transform: translateX(-4.5rem);
+        }
+        & .button_dish__check {
+            transform: rotate(360deg);
+        }
+    }
     &__title {
         margin: 0;
         padding-left: 0.7rem;
         padding-top: 0.8rem;
         line-height: 1.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     &__description {
         margin: 0;
         padding-left: 0.7rem;
         font-size: 1rem;
+        width: auto;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__price {
-        position: absolute;
-        top: 1.4rem;
-        right: 1.5rem;
+        padding-right: 1.5rem;
+        margin: 0;
         font-weight: bold;
         font-size: 1rem;
+        transition: transform ease-out .6s;
+        transform: translateX(0);
+    }
+    &__check_box {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform-origin: right;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: $colour-tertiary;
+        transition: transform ease-out .6s;
+        transform: translateX(4.5rem);
+    }
+    &__check {
+        align-self: center;
+        background-color: $colour-white;
+        color: $colour-tertiary;
+        position: absolute;
+        left: 28%;
+        font-size: 2rem;
+        border-radius: 50%;
+        transition: transform ease-out .6s;
+        transform: rotate(0deg);
     }
 }
