@@ -18,3 +18,74 @@
 .button_restaurant {
     @include btn_restaurant
 }
+
+@media screen and (min-width: 500px) {
+    .intro {
+        height: 14rem;
+    }
+    .fonctionnement {
+        height: 18rem;
+    }
+    .fonctionnement>div {
+        flex-direction: row;
+        margin: 2rem;
+        height: 5rem;
+    }
+    .step {
+        width: 11rem;
+    }
+    .step--pink {
+        width: 11rem;
+    }
+    #restaurants {
+        height: 50rem;
+    }
+    #restaurants > .container_restaurant {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 40rem;
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .fonctionnement > div {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    .step {
+        width: 18rem;
+        &--pink {
+            width: 18rem;
+        }
+    }
+    #restaurants {
+        height: 30rem;
+    }
+    .container_restaurant {
+        height: 18rem !important;
+        margin: 2.5rem !important;
+    }
+    .button_restaurant {
+        width: 19.5rem;
+        &__img {
+            width: 19.5rem;
+        }
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 8rem;
+        &__logo {
+            padding-top: 0;
+            margin: 0;
+        }
+        &__content {
+            width: 65rem;
+            justify-content: space-between;
+            flex-direction: row;    
+        }
+    }
+}

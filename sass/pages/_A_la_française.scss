@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.restaurant_img2 {
+    display: none;
+    width: 100%;
+}
+
 .menu {
     position: relative;
     height: 68rem;
@@ -26,8 +31,8 @@
     &__icon {
         position: absolute;
         cursor: pointer;
-        right: 3rem;
-        top: 2rem;
+        left: 21rem;
+        top: 2.2rem;
         font-size: 1.8rem;
         &:hover {
             & .border_radius_ontop__icon--full {
@@ -113,4 +118,32 @@
 .intro__button--order {
     @include button;
     @include flex-center-item;
+}
+
+@media screen and (min-width: 500px) {}
+
+@media screen and (min-width: 1000px) {
+    .restaurant_img {
+        display: none;
+    }
+    .restaurant_img2 {
+        display: block;
+    }
+    .border_radius_ontop {
+        top: -5rem;
+    }
+    .container_order {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        height: 44rem;
+    }
+
+    .menu_section {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 7rem;
+    }
 }

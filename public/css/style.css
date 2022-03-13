@@ -137,8 +137,7 @@ button {
 }
 .position__icon {
   font-size: 1.2rem;
-  position: absolute;
-  left: 8rem;
+  margin-right: 1rem;
 }
 
 .intro {
@@ -222,6 +221,7 @@ button {
 }
 .footer__content {
   display: flex;
+  width: 14rem;
   flex-direction: column;
   padding-left: 1.5rem;
 }
@@ -399,7 +399,92 @@ button {
   background-color: #99E2D0;
 }
 
+@media screen and (min-width: 500px) {
+  .intro {
+    height: 14rem;
+  }
+
+  .fonctionnement {
+    height: 18rem;
+  }
+
+  .fonctionnement > div {
+    flex-direction: row;
+    margin: 2rem;
+    height: 5rem;
+  }
+
+  .step {
+    width: 11rem;
+  }
+
+  .step--pink {
+    width: 11rem;
+  }
+
+  #restaurants {
+    height: 50rem;
+  }
+
+  #restaurants > .container_restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40rem;
+    margin: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .fonctionnement > div {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .step {
+    width: 18rem;
+  }
+  .step--pink {
+    width: 18rem;
+  }
+
+  #restaurants {
+    height: 30rem;
+  }
+
+  .container_restaurant {
+    height: 18rem !important;
+    margin: 2.5rem !important;
+  }
+
+  .button_restaurant {
+    width: 19.5rem;
+  }
+  .button_restaurant__img {
+    width: 19.5rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8rem;
+  }
+  .footer__logo {
+    padding-top: 0;
+    margin: 0;
+  }
+  .footer__content {
+    width: 65rem;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 .restaurant_img {
+  width: 100%;
+}
+
+.restaurant_img2 {
+  display: none;
   width: 100%;
 }
 
@@ -427,8 +512,8 @@ button {
 .border_radius_ontop__icon {
   position: absolute;
   cursor: pointer;
-  right: 3rem;
-  top: 2rem;
+  left: 21rem;
+  top: 2.2rem;
   font-size: 1.8rem;
 }
 .border_radius_ontop__icon:hover .border_radius_ontop__icon--full {
@@ -613,6 +698,35 @@ button {
   opacity: 0;
   z-index: -1;
   transition: opacity ease-in-out 0.3s;
+}
+
+@media screen and (min-width: 1000px) {
+  .restaurant_img {
+    display: none;
+  }
+
+  .restaurant_img2 {
+    display: block;
+  }
+
+  .border_radius_ontop {
+    top: -5rem;
+  }
+
+  .container_order {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    height: 44rem;
+  }
+
+  .menu_section {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
