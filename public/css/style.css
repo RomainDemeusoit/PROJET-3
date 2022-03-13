@@ -561,6 +561,7 @@ button {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 2px;
   overflow: hidden;
   animation: fade ease-in-out 2s;
+  animation-fill-mode: backwards;
   opacity: 1;
 }
 .button_dish:hover .button_dish__check_box {

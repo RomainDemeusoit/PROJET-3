@@ -75,6 +75,7 @@
 .button_dish {
     @include btn_dish;
     animation: fade ease-in-out 2s;
+    animation-fill-mode: backwards;
     opacity: 1;
 }
 
