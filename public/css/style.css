@@ -629,11 +629,11 @@ button {
 }
 
 .button_dish:nth-child(1) {
-  animation-delay: 0s;
+  animation-delay: 0.2s;
 }
 
 .button_dish:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
 .button_dish:nth-child(3) {
@@ -641,11 +641,11 @@ button {
 }
 
 .button_dish:nth-child(4) {
-  animation-delay: 0.9s;
+  animation-delay: 0.8s;
 }
 
 .button_dish:nth-child(5) {
-  animation-delay: 1.2s;
+  animation-delay: 1s;
 }
 
 @keyframes fade {
