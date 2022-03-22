@@ -554,6 +554,7 @@ button {
 
 .button_dish {
   position: relative;
+  cursor: pointer;
   width: 23.5rem;
   height: 4.5rem;
   background-color: #fff;
