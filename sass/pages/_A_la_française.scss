@@ -10,7 +10,7 @@
 
 .menu {
     position: relative;
-    height: 68rem;
+    height: auto;
 }
 
 .border_radius_ontop {
@@ -62,7 +62,7 @@
 .menu_section {
     @include flex-center-column-between;
     margin-top: 1rem;
-    height: 15rem;
+    height: auto;
 }
 
 .green_underline {
@@ -102,6 +102,7 @@
 
 .container_order {
     padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-left: 7rem;
     padding-right: 7rem;
 }
@@ -111,7 +112,17 @@
     @include flex-center-item;
 }
 
-@media screen and (min-width: 500px) {}
+@media screen and (min-width: 800px) {
+    .restaurant_img {
+        display: none;
+    }
+    .restaurant_img2 {
+        display: block;
+    }
+    .border_radius_ontop {
+        top: -5rem;
+    }
+}
 
 @media screen and (min-width: 1000px) {
     .restaurant_img {
@@ -129,7 +140,7 @@
     }
 
     .menu {
-        height: 44rem;
+        height: auto;
     }
 
     .menu_section {
