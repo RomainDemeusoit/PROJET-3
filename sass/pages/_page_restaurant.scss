@@ -74,23 +74,12 @@
 
 .button_dish {
     @include btn_dish;
-    animation: fade ease-in-out 2s;
-    animation-fill-mode: backwards;
+    animation: 1s ease-in-out backwards fade;
     opacity: 1;
-}
-
-@for $i from 1 through 5 {
-    .button_dish:nth-child(#{$i}) {
-        animation-delay: $i * 0.2s;
-    }
 }
 
 @keyframes fade {
     0% {
-        opacity: 0;
-        transform: translate(0, 1rem);
-    }
-    50% {
         opacity: 0;
         transform: translate(0, 1rem);
     }

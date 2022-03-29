@@ -52,7 +52,7 @@
         opacity: 1;
         height: 68rem;
         @include flex-center-column-between;
-        animation: apparition 4s ease-in-out;
+        animation: 1s apparition 4.5s both;
     }
 
     @keyframes apparition {
@@ -60,9 +60,6 @@
             opacity: 0;
         }
 
-        85% {
-            opacity: 0;
-        }
         100% {
             opacity: 1;
         }
